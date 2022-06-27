@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name ="viewport" content = "with=device-width, initial-scale = 1.0">
+    <title>University Website</title>
+    <link rel = "stylesheet" href = "style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>    
+    <section class="sub-header">
+        <nav>
+            <a href = "index.html"><img src = "images/PAU_LOGO.webp" ></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-arrow-circle-left" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+          <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+
+    <!------ contact us ----->
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31105.73159475817!2d77.67501137986149!3d12.95799701533806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1616407075040!5m2!1sen!2sin" width="600" height="450" syle="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+            <div>
+                <i class="fas fa-home"></i>
+                <span>
+                    <h5>78, TY Danjuma Avenue, Road 32, Lagos, Nigeria </h5>
+                    <p>Bangalore Karnataka, IN</p>
+                </span>
+            </div>
+            <div>
+                <i class="fas fa-phone"></i>
+                <span>
+                    <h5>+234 8113387927</h5>
+                    <p>Monday to Saturday, 10AM to 6PM</p>
+                </span>
+            </div>
+            <div>
+                <i class="fas fa-envelope-open"></i>
+                <span>
+                    <h5>info@loremipsum.com</h5>
+                    <p>Email Us your query</p>
+                </span>
+            </div>
+        </div>
+        <div class="contact-col"></div>
+    </div> 
+    </section>
+
+    <!-----About----->
+    <section class="abt_us">
+        <h4>About US</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat suscipit, a nesciunt nihil deleniti eligendi illo adipisci atque qui culpa doloremque tenetur,<br>iusto neque laborum necessitatibus iure quidem! In, esse?</p>
+        <div class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin"></i>
+        </div>
+        <p>Made with <i class = "fas fa-heart"></i> by Sophia</p>
+    </section>
+    <!-----Javascript code----->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
